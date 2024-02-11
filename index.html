@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Login Page</title>
+  <style>
+    /* Style the body */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    /* Style the login form */
+    .login-form {
+      width: 300px;
+      margin: 100px auto;
+      padding: 30px;
+      background-color: white;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    /* Style the input fields */
+    .login-form input {
+      width: 100%;
+      height: 40px;
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      outline: none;
+    }
+
+    /* Style the submit button */
+    .login-form input[type="submit"] {
+      background-color: #04AA6D;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Style the submit button on hover */
+    .login-form input[type="submit"]:hover {
+      background-color: #03a55a;
+    }
+
+    /* Style the form title */
+    .login-form h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Create the login form -->
+  <div class="login-form">
+    <h2>Login</h2>
+    <form action="action_page.php" method="post">
+      <!-- Create the username field -->
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+      <!-- Create the password field -->
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      <!-- Create the submit button -->
+      <input type="submit" value="Login">
+    </form>
+  </div>
+</body>
+</html>
